@@ -14,13 +14,9 @@ class Solution {
         int min=Integer.MAX_VALUE;
         if(dp[i][j]!=-1) return dp[i][j];
         if(i>0)
-        {
             min=Math.min(min,grid[i][j]+helper(i-1,j,grid,dp));
-        }
         if(j>0) 
            min=Math.min(min,grid[i][j]+helper(i,j-1,grid,dp));
-       
-
         return dp[i][j]=min;
     }
 }
