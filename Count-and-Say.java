@@ -22,8 +22,7 @@ class Solution {
                 cnt=0;
                 prev=s.charAt(i);
             }
-            cnt++;
-            
+            cnt++;     
          }
          str+=cnt;
          str+=prev;
