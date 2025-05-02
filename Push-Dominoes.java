@@ -21,10 +21,10 @@ class Solution {
             else if(c=='L')nearest=-1;
             right[i]=nearest;
         }
-        for(int i=0;i<n;i++)
-        {
-            System.out.println(left[i]+ " "+right[i]);
-        }
+        // for(int i=0;i<n;i++)
+        // {
+        //     System.out.println(left[i]+ " "+right[i]);
+        // }
         char[] result = new char[n];
         for(int i=0;i<n;i++)
         { char c=dominoes.charAt(i);
