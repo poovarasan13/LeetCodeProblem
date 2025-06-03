@@ -1,7 +1,15 @@
 class Solution {
     public int countSegments(String s) {
-        if(s.trim().equals(\\)) return 0;
-       String strs [] = s.trim().split(\\\\\s+\);
-        return strs.length;
+        int count = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+
+            if (s.charAt(i) != ' ' && (i == 0 || s.charAt(i - 1) == ' ')) {
+                count++;
+            }
+
+        }
+
+        return count;
     }
 }
