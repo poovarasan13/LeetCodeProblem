@@ -11,14 +11,12 @@ class Solution {
                 cnt++;
                 i++;
                 j++;
-
             }
             else{
                 j++;
             }
         }
         return cnt;
-
     }
 
 }
